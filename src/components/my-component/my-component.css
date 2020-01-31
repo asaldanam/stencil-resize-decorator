@@ -1,0 +1,27 @@
+:host {
+  display: block;
+}
+
+:host([size="sm"]) .c-title {
+  font-size: 1rem;
+}
+
+:host([size="sm"]) .c-text {
+  font-size: 0.875rem;
+}
+
+:host([size="md"]) {
+
+}
+
+:host([size="lg"]) {
+
+}
+
+:host([size="md"]) .c-card {
+  display: flex;
+}
+
+.c-image {
+  width: 100%;
+}

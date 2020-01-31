@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+
+  <title>Stencil Component Starter</title>
+
+
+  <script type="module" src="/build/poc-stencil-lib.esm.js"></script>
+  <script nomodule src="/build/poc-stencil-lib.js"></script>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    html {
+      font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+      line-height: 1.5 /* 2 */;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+
+</head>
+<body>
+
+  <button onClick="addColumn()">Add column</button>
+
+    <div id="container" class="flex container mx-auto">
+
+      <div class="w-1/2 bg-gray-200 p-8">
+        <my-component></my-component>
+      </div>
+
+    </div>
+  <script>
+    var $slider = document.querySelector('#slider');
+    var $component = document.querySelector('my-component')
+    var $container = document.querySelector('#container')
+    var $text = document.querySelector('#text')
+
+    const template = document.createElement("template");
+    template.innerHTML = /*html*/`
+      <div class="w-1/2 px-4">
+        <div class="h-100 w-100 bg-gray-200">a</div>
+      </div>
+    `;
+
+    function addColumn() {
+      $container.appendChild(template.content.cloneNode(true))
+    }
+
+    function deleteComponent() {
+      $component.remove();
+    }
+
+  </script>
+
+</body>
+</html>
