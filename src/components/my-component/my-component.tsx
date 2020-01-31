@@ -33,7 +33,7 @@ export class MyComponent {
           <img class="c-image" src="https://source.unsplash.com/random/300x300" alt="Sunset in the mountains" />
 
           <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <div class="c-title font-bold text-xl mb-2">The Coldest Sunset</div>
             <p class="c-text text-gray-700 text-base">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
             </p>

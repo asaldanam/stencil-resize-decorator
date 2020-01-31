@@ -10,13 +10,13 @@
   font-size: 0.875rem;
 }
 
-:host([size="md"]) {
+/* :host([size="md"]) {
 
 }
 
 :host([size="lg"]) {
 
-}
+} */
 
 :host([size="md"]) .c-card {
   display: flex;
